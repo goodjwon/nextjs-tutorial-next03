@@ -3,5 +3,7 @@ export default async function getAllUsers(){
 
 	if(!res.ok) throw new Error('fail to fetch data');
 
+	console.log(res);
+
 	return res.json();
 }
